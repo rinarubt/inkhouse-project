@@ -17,7 +17,8 @@
   --color-burger-button: #4c5866;
 
   --transition-duration: 0.3s;
-  --transition-longer: 0.15s;
+
+  --border: 1px solid #c3d1c6;
 }
 
 html {
@@ -558,7 +559,7 @@ section[class] {
   .header__navigation-wrapper {
     justify-content: space-between;
     width: 100%;
-    border-top: 1px solid #c3d1c6;
+    border-top: var(--border);
     padding-top: 16px;
   }
 
@@ -653,7 +654,7 @@ section[class] {
   }
 
   .footer__navigation {
-    border-bottom: 1px solid #c3d1c6;
+    border-bottom: var(--border);
     padding-bottom: 16px;
     column-gap: 70px;
   }
@@ -860,8 +861,6 @@ section[class] {
   .footer__navigation {
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 1px solid #c3d1c6;
-    padding-bottom: 16px;
     gap: 10px;
   }
 }
